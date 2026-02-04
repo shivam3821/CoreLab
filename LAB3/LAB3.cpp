@@ -2,7 +2,7 @@
 Lab 3. Formulate and implement Dijkstra’s algorithm to compute
     the shortest path between two vertices in a weighted graph
     with non-negative edge weights. Provide a time complexity
-    analysis of the implementation.
+    analysis of the implementation. (Single source shortest path)
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,6 +23,7 @@ private:
     vector<Node *> adj; // adjacency list using linked lists
 
 public:
+//constructor
     Graph(int v)
     {
         V = v;
